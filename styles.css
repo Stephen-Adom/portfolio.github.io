@@ -116,6 +116,7 @@ body {
 #work-section .container {
   display: grid;
   grid-template-columns: 100%;
+  row-gap: 3rem;
 }
 
 .card-work {
@@ -142,6 +143,7 @@ body {
   line-height: 44px;
   color: var(--grey-text-deep);
   margin: 0;
+  max-width: 90%;
 }
 
 .project-additional-info {
