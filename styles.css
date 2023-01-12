@@ -230,3 +230,15 @@ body {
   background: var(--primary-color-deep);
   color: #fff;
 }
+
+#about-section {
+  background: var(--base-color);
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--grey-text-deep);
+  margin: 0;
+}
