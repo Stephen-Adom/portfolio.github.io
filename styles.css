@@ -4,6 +4,7 @@
   --primary-color: #6070ff;
   --primary-color-deep: #2230d2;
   --base-color: #fff;
+  --grey-text: #344563;
 }
 
 html,
@@ -31,7 +32,7 @@ body {
 .page_logo {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 18px;
   font-weight: 700;
   display: block;
 }
@@ -67,6 +68,10 @@ body {
   margin: 0;
 }
 
+#headline p {
+  color: var(--grey-text);
+}
+
 .headline-connect-link {
   color: var(--primary-color);
   text-decoration: none;
@@ -77,17 +82,18 @@ body {
   display: flex;
   align-items: center;
   margin-top: 5px;
+  padding-left: 0;
 }
 
-.social-links a {
+.social-links li {
   display: block;
   padding: 7px 13px;
 }
 
-.social-links a:hover {
+.social-links li a:hover {
   color: var(--primary-color-deep);
 }
 
-.social-links a:nth-child(1) {
+.social-links li:nth-child(1) {
   padding-left: 0 !important;
 }
