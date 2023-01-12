@@ -22,7 +22,7 @@
 
 ## 📖 Personal Portfolio <a name="about-project"></a>
 
-A mobile view portfolio showing only the header and headline section. The headline section shows the summary of the author's information
+A mobile view portfolio showing only the header and headline section. The headline section shows the summary of the author's information. The work section display list of projects I have worked on and about section shows information about myself
 
 ### 🛠 Built With <a name="built-with"></a>
 
@@ -31,6 +31,7 @@ A mobile view portfolio showing only the header and headline section. The headli
 - Html
 - CSS3
 - Flexbox
+- CSS Grid
 
 <!-- Features -->
 
@@ -38,6 +39,8 @@ A mobile view portfolio showing only the header and headline section. The headli
 
 - **Navigation Section**
 - **Headline Section**
+- **Work Section**
+- **About Section**
 
 <!-- GETTING STARTED -->
 
@@ -63,5 +66,7 @@ Clone this repository to your desired folder:
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [CSS-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for guidance and knowledge on flexbox
+
+I would like to thank [W3schools](https://www.w3schools.com/css/css_grid.asp) and [Net Ninja](https://netninja.dev/p/build-layouts-with-css-grid) for tutorials on css grids
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
