@@ -16,7 +16,10 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -63,10 +66,22 @@ Clone this repository to your desired folder:
 - Twitter: [@stephen_alaska](https://twitter.com/stephen_alaska)
 - LinkedIn: [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
 
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please provide suggestions to help improve this project
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank [CSS-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for guidance and knowledge on flexbox
 
 I would also like to thank [W3schools](https://www.w3schools.com/css/css_grid.asp) and [Net Ninja](https://netninja.dev/p/build-layouts-with-css-grid) for tutorials on css grids
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
