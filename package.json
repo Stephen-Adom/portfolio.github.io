@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Personal Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint-html": "npx hint .",
+    "lint-css": "npx stylelint \"**/*.{css,scss}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephen-Adom/portfolio.git"
+  },
+  "author": "alaska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stephen-Adom/portfolio/issues"
+  },
+  "homepage": "https://github.com/Stephen-Adom/portfolio#readme",
+  "devDependencies": {
+    "hint": "^7.1.3",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
