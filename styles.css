@@ -242,3 +242,10 @@ body {
   color: var(--grey-text-deep);
   margin: 0;
 }
+
+.about-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--project-description-color);
+}
