@@ -16,6 +16,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -65,6 +66,12 @@ Clone this repository to your desired folder:
 - GitHub: [@Stephen-Adom](https://github.com/Stephen-Adom)
 - Twitter: [@stephen_alaska](https://twitter.com/stephen_alaska)
 - LinkedIn: [Stephen Addae](https://www.linkedin.com/in/stephen-addae-a32334154/)
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Contact Form**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
