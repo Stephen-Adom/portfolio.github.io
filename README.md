@@ -67,6 +67,6 @@ Clone this repository to your desired folder:
 
 I would like to thank [CSS-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) for guidance and knowledge on flexbox
 
-I would like to thank [W3schools](https://www.w3schools.com/css/css_grid.asp) and [Net Ninja](https://netninja.dev/p/build-layouts-with-css-grid) for tutorials on css grids
+I would also like to thank [W3schools](https://www.w3schools.com/css/css_grid.asp) and [Net Ninja](https://netninja.dev/p/build-layouts-with-css-grid) for tutorials on css grids
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
