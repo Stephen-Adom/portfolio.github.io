@@ -15,6 +15,7 @@
   --project-additional-info-text: #7a869a;
   --tag-bg: #ebebff;
   --project-btn-text: #396df2;
+  --skill-label-color: #253858;
 }
 
 html,
@@ -42,7 +43,7 @@ body {
 .page_logo {
   color: var(--primary-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.4rem;
   font-weight: 700;
   display: block;
 }
@@ -83,9 +84,11 @@ body {
 }
 
 .headline-connect-link {
-  color: var(--primary-color);
+  color: var(--primary-color-light);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .social-links {
@@ -110,7 +113,7 @@ body {
 
 #work-section {
   background: var(--light-white-bg);
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 #work-section .container {
@@ -135,6 +138,7 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 12px;
+  margin-bottom: 1rem;
 }
 
 .card-work .card-content .project-title {
@@ -192,6 +196,8 @@ body {
   padding: 0;
   gap: 8px;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 .project-tags li {
@@ -206,16 +212,16 @@ body {
 }
 
 .project-btn {
+  padding: 12px;
+  border-radius: 8px;
   border: 1px solid var(--primary-color);
-  padding: 16px;
-  border-radius: 16px;
   background-color: var(--base-color);
+  color: var(--project-btn-text);
+  letter-spacing: 0.03em;
   text-decoration: none;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: var(--project-btn-text);
-  letter-spacing: 0.03em;
   width: max-content;
   display: inline-block;
 }
@@ -233,6 +239,16 @@ body {
 
 #about-section {
   background: var(--base-color);
+  padding: 6rem 0;
+}
+
+#about-section .container .about,
+#about-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
 }
 
 .about-title {
@@ -248,4 +264,86 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: var(--project-description-color);
+  margin: 0;
+}
+
+#about-section .social-links {
+  margin-bottom: 0;
+}
+
+#about-section .container .skill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  margin-top: 0.7rem;
+  list-style: none;
+}
+
+.skill-list .accordion {
+  width: 100%;
+}
+
+.skill-list .accordion .accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.skill-list .accordion:nth-child(1) .accordion-header {
+  border-bottom: none;
+}
+
+.skill-list .accordion .accordion-header h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.skill-list .accordion .accordion-header button {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: transparent;
+  padding: 8px;
+  display: block;
+  border: none;
+}
+
+.skill-list .accordion .accordion-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 12px 12px 24px;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+}
+
+.skill-list .accordion .accordion-content .skill-item {
+  background: var(--light-white-bg);
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px;
+  gap: 1rem;
+}
+
+.skill-item-logo {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
+}
+
+.skill-list .accordion .accordion-content .skill-item h6 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--skill-label-color);
+  margin: 0;
 }
