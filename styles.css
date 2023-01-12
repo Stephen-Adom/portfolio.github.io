@@ -3,8 +3,11 @@
 :root {
   --primary-color: #6070ff;
   --primary-color-deep: #2230d2;
+  --primary-color-light: #7f8cff;
   --base-color: #fff;
   --grey-text: #344563;
+  --grey-text-deep: #172b4d;
+  --light-white-bg: #e5e5e5;
 }
 
 html,
@@ -64,18 +67,25 @@ body {
 
 .headline-title {
   font-weight: 700;
-  font-size: 2.6rem;
+  font-size: 40px;
   margin: 0;
+  color: var(--grey-text-deep);
+  line-height: 52px;
 }
 
 #headline p {
   color: var(--grey-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .headline-connect-link {
-  color: var(--primary-color);
+  color: var(--primary-color-light);
   text-decoration: none;
-  font-size: 1.3rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .social-links {
