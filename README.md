@@ -72,6 +72,9 @@ Clone this repository to your desired folder:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Contact Form**
+- [ ] **About Page**
+- [ ] **Portfolio Page**
+- [ ] **Contact Page**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
