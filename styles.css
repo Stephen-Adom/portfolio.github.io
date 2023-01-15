@@ -20,9 +20,10 @@
 
 html,
 body {
-  background-color: var(--base-color);
+  background-color: var(--light-white-bg);
   font-family: "Poppins", sans-serif;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
 
 #navbar {
   padding: 18px 0;
+  background-color: var(--base-color);
 }
 
 #navbar .container {
@@ -66,6 +68,8 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--base-color);
+  border-bottom-left-radius: 5.5rem;
 }
 
 #headline .container {
@@ -245,6 +249,7 @@ body {
 #about-section {
   background: var(--base-color);
   padding: 6rem 0;
+  border-top-right-radius: 5.5rem;
 }
 
 #about-section .container .about,
