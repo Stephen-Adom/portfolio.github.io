@@ -357,3 +357,20 @@ body {
   color: var(--skill-label-color);
   margin: 0;
 }
+
+#contact-section {
+  width: 100%;
+  min-height: 779px;
+  background: url("./assets/images/contact-form-shapes-mobile.png");
+  background-position: right;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  border-top-left-radius: 5.5rem;
+  padding: 4rem 0 2rem 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
