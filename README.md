@@ -45,6 +45,7 @@ A mobile view portfolio showing only the header and headline section. The headli
 - **Headline Section**
 - **Work Section**
 - **About Section**
+- **Contact Section**
 
 <!-- GETTING STARTED -->
 
@@ -71,7 +72,6 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Contact Form**
 - [ ] **About Page**
 - [ ] **Portfolio Page**
 - [ ] **Contact Page**

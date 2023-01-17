@@ -336,5 +336,55 @@
         </ul>
       </div>
     </section>
+
+    <section id="contact-section">
+      <div class="container">
+        <h1 class="contact-section-title">Contact me</h1>
+
+      <p class="contact-description">
+        If you have an application you are interested in developing, a feature
+        that you need built or a project that needs coding. I’d love to help
+        with it
+      </p>
+      <form action="https://formspree.io/f/xgebvywo" method="POST">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            maxlength="30"
+            name="name"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Enter email address"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            name="email"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            placeholder="Write your message here"
+            class="form-control"
+            maxlength="500"
+            rows="5"
+            name="message"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="project-btn submit-btn">
+            Get In Touch
+          </button>
+        </div>
+      </form>
+      </div>
+    </section>
   </body>
 </html>
