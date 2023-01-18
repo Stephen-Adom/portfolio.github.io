@@ -37,7 +37,7 @@ body {
   padding: 18px 0;
   background-color: var(--base-color);
   position: fixed;
-  top: 0;
+  top: -1px;
   left: 0;
   width: 100%;
   z-index: 5;
@@ -81,7 +81,12 @@ body {
 }
 
 .nav-links .nav-link:hover {
-  background: rgb(96 112 255 / 22%);
+  background: var(--primary-color);
+  cursor: pointer;
+}
+
+.nav-links .nav-link:hover a {
+  color: #fff;
 }
 
 .nav-links .nav-link a {
@@ -186,6 +191,7 @@ body {
   gap: 12px;
   margin-bottom: 1rem;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .card-work .card-content .project-title {
@@ -207,6 +213,7 @@ body {
   align-items: center;
   padding: 0;
   gap: 12px;
+  margin-bottom: 0;
 }
 
 .project-additional-info h5 {
@@ -222,6 +229,7 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: var(--project-additional-info-text);
+  margin: 0;
 }
 
 .dot {
@@ -425,7 +433,7 @@ body {
 }
 
 #contact-section .container {
-  width: inherit;
+  width: 90%;
 }
 
 #contact-section .contact-section-title {
@@ -484,6 +492,10 @@ body {
 
 /* Medium devices (tablets, 768px and up */
 @media (min-width: 768px) {
+  #navbar {
+    padding: 5px 0;
+  }
+
   .nav-links {
     display: flex;
   }
@@ -501,7 +513,7 @@ body {
     background-color: var(--base-color);
     border-bottom-left-radius: 5.5rem;
     background-position: -394px -2px;
-    margin-top: 110px;
+    margin-top: 84px;
   }
 
   .container {
@@ -535,6 +547,10 @@ body {
     padding: 20px;
   }
 
+  .card-work .card-content {
+    padding: 13px 18px;
+  }
+
   .card-work .card-content .project-btn {
     margin-top: 10px;
   }
@@ -544,6 +560,10 @@ body {
     font-size: 40px;
     line-height: 52px;
     max-width: 100%;
+  }
+
+  .project-additional-info {
+    margin-bottom: 12px;
   }
 
   .project-additional-info h5 {
@@ -566,6 +586,16 @@ body {
 
   .project-tags {
     margin-top: 15px;
+  }
+
+  #contact-section {
+    min-height: 846px;
+    background: url("./assets/images/contact-form-background.png");
+    background-position: 14px 7%;
+    background-size: contain;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    padding: 4rem 0 2rem 0;
   }
 }
 
@@ -646,12 +676,4 @@ body {
   #contact-section form .form-group:last-child {
     text-align: center;
   }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
 }
