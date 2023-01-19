@@ -182,8 +182,31 @@ body {
   align-items: center;
   padding: 16px;
   gap: 12px;
+  transition: box-shadow 0.2s ease-in;
 }
 
+.card-work .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.card-work:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+
+.card-work .image-container img {
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.card-work:hover .image-container img {
+  transform: scale(1.1);
+}
 .card-content {
   display: flex;
   flex-direction: column;
