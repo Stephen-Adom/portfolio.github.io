@@ -285,6 +285,7 @@ body {
   width: max-content;
   display: inline-block;
   cursor: pointer;
+  transition: all 0.15s ease-in;
 }
 
 .project-btn:hover {
