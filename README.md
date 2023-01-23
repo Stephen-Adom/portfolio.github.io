@@ -13,6 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
 - [👥 Authors](#authors)
@@ -48,6 +49,14 @@ A mobile view portfolio showing only the header and headline section. The headli
 - **Contact Section**
 
 <!-- GETTING STARTED -->
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+Here is a link to my project. You can view to show the output so far.
+
+- [Live Demo Link](https://stephen-adom.github.io/portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
