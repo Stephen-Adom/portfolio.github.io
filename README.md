@@ -54,7 +54,7 @@ A mobile view portfolio showing only the header and headline section. The headli
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+Here is a link to my project. You can view to show the output so far.
 
 - [Live Demo Link](https://stephen-adom.github.io/portfolio/)
 
