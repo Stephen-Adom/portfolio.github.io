@@ -622,7 +622,6 @@ body {
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #work-section .container {
     row-gap: 9rem;
