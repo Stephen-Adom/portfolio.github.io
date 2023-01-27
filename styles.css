@@ -545,9 +545,9 @@ body {
   }
 
   #headline .container {
-    width: 75%;
+    width: 55%;
     position: relative;
-    top: 9rem;
+    top: 17rem;
   }
 
   .headline-title {
@@ -622,7 +622,6 @@ body {
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #work-section .container {
     row-gap: 9rem;
