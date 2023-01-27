@@ -27,7 +27,8 @@
 
 ## 📖 Personal Portfolio <a name="about-project"></a>
 
-A mobile view portfolio showing only the header and headline section. The headline section shows the summary of the author's information. The work section display list of projects I have worked on and about section shows information about myself
+A mobile view portfolio showing only the header and headline section. The headline section shows the summary of the author's information. The work section display list of projects I have worked on and about section shows information about myself.
+More about this project can be found in [this video](https://drive.google.com/file/d/10omgChKLub9aeROGhntqJej4O-uX_npZ/view?usp=sharing)
 
 ### 🛠 Built With <a name="built-with"></a>
 
