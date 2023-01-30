@@ -22,7 +22,7 @@
 html,
 body {
   background-color: var(--light-white-bg);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -99,6 +99,10 @@ body {
   color: var(--grey-text);
 }
 
+.open-menu {
+  display: none;
+}
+
 .mobile-navigation {
   position: fixed;
   top: 0;
@@ -143,7 +147,7 @@ body {
   position: relative;
   min-height: 35rem;
   width: 100%;
-  background: url("./assets/images/header-bg-mobile.png");
+  background: url('./assets/images/header-bg-mobile.png');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -482,7 +486,7 @@ body {
 #contact-section {
   width: 100%;
   min-height: 779px;
-  background: url("./assets/images/contact-form-shapes-mobile.png");
+  background: url('./assets/images/contact-form-shapes-mobile.png');
   background-position: right;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -535,7 +539,7 @@ body {
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 #contact-section .form-group .form-control:focus {
@@ -571,7 +575,7 @@ body {
   #headline {
     min-height: 40rem;
     width: 100%;
-    background: url("./assets/images/header-bg.png");
+    background: url('./assets/images/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--base-color);
@@ -654,7 +658,7 @@ body {
 
   #contact-section {
     min-height: 846px;
-    background: url("./assets/images/contact-form-background.png");
+    background: url('./assets/images/contact-form-background.png');
     background-position: 14px 7%;
     background-size: contain;
     background-color: var(--primary-color);
@@ -720,7 +724,7 @@ body {
 
   #contact-section {
     min-height: 846px;
-    background: url("./assets/images/contact-form-background.png");
+    background: url('./assets/images/contact-form-background.png');
     background-position: center;
     background-size: 90%;
     background-color: var(--primary-color);
@@ -738,5 +742,9 @@ body {
 
   #contact-section form .form-group:last-child {
     text-align: center;
+  }
+
+  .mobile-navigation {
+    display: none;
   }
 }
