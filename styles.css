@@ -116,6 +116,7 @@ body {
   box-sizing: border-box;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+  transition: all 3s ease-in-out;
 }
 
 .mobile-navigation .sidebar-header {
@@ -128,11 +129,25 @@ body {
   padding: 0.3rem;
 }
 
+.sidebar-menu {
+  transition: all 6s ease-in-out;
+  animation: moveInBottom 1s ease-in-out;
+}
+
 .mobile-navigation .sidebar-menu {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.3rem;
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .mobile-navigation .sidebar-menu li a {
