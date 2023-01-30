@@ -22,7 +22,7 @@
 html,
 body {
   background-color: var(--light-white-bg);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -42,6 +42,11 @@ body {
   left: 0;
   width: 100%;
   z-index: 5;
+  transition: 0.6 all ease;
+}
+
+#navbar.navbar-shadow {
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 #navbar .container {
@@ -80,11 +85,19 @@ body {
   padding: 10px 10px;
   border-radius: 8px;
   transition: background 0.15s ease-in;
+  cursor: pointer;
 }
 
 .nav-links .nav-link:hover {
   background: var(--primary-color);
-  cursor: pointer;
+}
+
+.nav-links .nav-link.active {
+  background: var(--primary-color);
+}
+
+.nav-links .nav-link.active a {
+  color: #fff;
 }
 
 .nav-links .nav-link:hover a {
@@ -109,14 +122,12 @@ body {
   left: 0;
   width: 100%;
   min-height: 100vh;
-  background: var(--primary-color);
-  mix-blend-mode: multiply;
+  background: rgb(30 48 207 / 74%);
   z-index: 7;
   padding: 1.6rem;
   box-sizing: border-box;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: all 3s ease-in-out;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .mobile-navigation .sidebar-header {
@@ -129,25 +140,17 @@ body {
   padding: 0.3rem;
 }
 
-.sidebar-menu {
-  transition: all 6s ease-in-out;
-  animation: moveInBottom 1s ease-in-out;
-}
-
 .mobile-navigation .sidebar-menu {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2.3rem;
+  padding-left: 10px;
+  animation: moveInBottom 0.8s ease-in-out;
 }
 
-@keyframes moveInBottom {
-  0% {
-    transform: translateY(-300px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.sidebar-menu li {
+  cursor: pointer;
 }
 
 .mobile-navigation .sidebar-menu li a {
@@ -162,7 +165,7 @@ body {
   position: relative;
   min-height: 35rem;
   width: 100%;
-  background: url('./assets/images/header-bg-mobile.png');
+  background: url("./assets/images/header-bg-mobile.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -501,7 +504,7 @@ body {
 #contact-section {
   width: 100%;
   min-height: 779px;
-  background: url('./assets/images/contact-form-shapes-mobile.png');
+  background: url("./assets/images/contact-form-shapes-mobile.png");
   background-position: right;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -554,7 +557,7 @@ body {
   font-weight: 400;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #contact-section .form-group .form-control:focus {
@@ -571,6 +574,16 @@ body {
 
 #contact-section form .form-group:last-child {
   text-align: left;
+}
+
+@keyframes moveInBottom {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Medium devices (tablets, 768px and up */
@@ -590,7 +603,7 @@ body {
   #headline {
     min-height: 40rem;
     width: 100%;
-    background: url('./assets/images/header-bg.png');
+    background: url("./assets/images/header-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--base-color);
@@ -673,7 +686,7 @@ body {
 
   #contact-section {
     min-height: 846px;
-    background: url('./assets/images/contact-form-background.png');
+    background: url("./assets/images/contact-form-background.png");
     background-position: 14px 7%;
     background-size: contain;
     background-color: var(--primary-color);
@@ -739,7 +752,7 @@ body {
 
   #contact-section {
     min-height: 846px;
-    background: url('./assets/images/contact-form-background.png');
+    background: url("./assets/images/contact-form-background.png");
     background-position: center;
     background-size: 90%;
     background-color: var(--primary-color);
