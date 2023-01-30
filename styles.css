@@ -26,6 +26,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  position: relative;
 }
 
 .container {
@@ -96,6 +97,46 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: var(--grey-text);
+}
+
+.mobile-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--primary-color);
+  mix-blend-mode: multiply;
+  z-index: 7;
+  padding: 1.6rem;
+  box-sizing: border-box;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.mobile-navigation .sidebar-header {
+  text-align: right;
+}
+
+.mobile-navigation .sidebar-header button {
+  background: transparent;
+  border: none;
+  padding: 0.3rem;
+}
+
+.mobile-navigation .sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.mobile-navigation .sidebar-menu li a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
 }
 
 #headline {
