@@ -1,23 +1,25 @@
-const navBtn = document.querySelector('.open-nav');
-const mobileNavigation = document.querySelector('.mobile-navigation');
-const navToggleBtn = document.querySelector('.nav-toggle-btn');
-const sidebarMenuContent = document.querySelector('.sidebar-menu');
-const navigationBar = document.querySelector('#navbar');
+const pageTimeout = setTimeout(() => {
+  const navBtn = document.querySelector('.open-nav');
+  const mobileNavigation = document.querySelector('.mobile-navigation');
+  const navToggleBtn = document.querySelector('.nav-toggle-btn');
+  const sidebarMenuContent = document.querySelector('.sidebar-menu');
+  const navigationBar = document.querySelector('#navbar');
 
-const infoSections = document.querySelectorAll('.info-section');
-const mainNavigationLinks = document.querySelectorAll('.nav-link');
+  const infoSections = document.querySelectorAll('.info-section');
+  const mainNavigationLinks = document.querySelectorAll('.nav-link');
 
-function removeAllActiveClasses() {
-  Array.from(mainNavigationLinks).forEach((link) => {
-    link.classList.remove('active');
-  });
-}
+  function removeAllActiveClasses() {
+    Array.from(mainNavigationLinks).forEach((link) => {
+      link.classList.remove('active');
+    });
+  }
 
-function setActiveClass(index) {
-  Array.from(mainNavigationLinks)[index].classList.add('active');
-}
+  function setActiveClass(index) {
+    if (Array.from(mainNavigationLinks)[index]) {
+      Array.from(mainNavigationLinks)[index].classList.add('active');
+    }
+  }
 
-document.addEventListener('DOMContentLoaded', () => {
   const sectionMargin = 100;
   let currentActive = 0;
 
@@ -38,18 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
       navigationBar.classList.remove('navbar-shadow');
     }
   });
-});
 
-function openToggleClass(e) {
-  e.stopPropagation();
-  mobileNavigation.classList.toggle('open-menu');
-}
-
-navBtn.addEventListener('click', openToggleClass);
-navToggleBtn.addEventListener('click', openToggleClass);
-
-sidebarMenuContent.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    openToggleClass(e);
+  function openToggleClass(e) {
+    e.stopPropagation();
+    mobileNavigation.classList.toggle('open-menu');
   }
+
+  navBtn.addEventListener('click', openToggleClass);
+  navToggleBtn.addEventListener('click', openToggleClass);
+
+  sidebarMenuContent.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      openToggleClass(e);
+    }
+  });
+}, 1000);
+
+window.addEventListener('beforeunload', () => {
+  clearTimeout(pageTimeout);
 });
