@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const pageTimeout = setTimeout(() => {
   const navBtn = document.querySelector('.open-nav');
   const mobileNavigation = document.querySelector('.mobile-navigation');
@@ -7,6 +8,10 @@ const pageTimeout = setTimeout(() => {
 
   const infoSections = document.querySelectorAll('.info-section');
   const mainNavigationLinks = document.querySelectorAll('.nav-link');
+
+  const contactForm = document.querySelector('form');
+  const errorMessage = document.querySelector('.error-message');
+  const submitBtn = document.querySelector('.project-btn.submit-btn');
 
   function removeAllActiveClasses() {
     Array.from(mainNavigationLinks).forEach((link) => {
@@ -52,6 +57,17 @@ const pageTimeout = setTimeout(() => {
   sidebarMenuContent.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
       openToggleClass(e);
+    }
+  });
+
+  // CONTACT FORM VALIDATION
+  submitBtn.addEventListener('click', () => {
+    if (contactForm.email.value !== contactForm.email.value.toLowerCase()) {
+      errorMessage.textContent = 'The email entered must be in lowercase. Check email to submit!';
+      errorMessage.style.display = 'block';
+    } else {
+      errorMessage.textContent = '';
+      errorMessage.style.display = 'none';
     }
   });
 }, 1000);

@@ -340,11 +340,14 @@ const renderMain = () => {
         ></textarea>
       </div>
 
+      <div class="error-message"></div>
+
       <div class="form-group">
         <button type="submit" class="project-btn submit-btn">
           Get In Touch
         </button>
       </div>
+      
     </form>
   </div>
 </section>

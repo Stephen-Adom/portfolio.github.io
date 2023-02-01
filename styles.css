@@ -692,6 +692,12 @@ body {
   overflow: hidden;
 }
 
+.error-message {
+  color: rgb(166 2 2);
+  font-weight: 600;
+  display: none;
+}
+
 @keyframes moveInBottom {
   0% {
     transform: translateY(-300px);
