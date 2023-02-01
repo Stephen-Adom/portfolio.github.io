@@ -29,9 +29,14 @@ const pageTimeout = setTimeout(() => {
   let currentActive = 0;
 
   window.addEventListener('scroll', () => {
-    const current = infoSections.length - [...infoSections]
-      .reverse()
-      .findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1;
+    const current =
+      infoSections.length -
+      [...infoSections]
+        .reverse()
+        .findIndex(
+          (section) => window.scrollY >= section.offsetTop - sectionMargin
+        ) -
+      1;
 
     if (current !== currentActive) {
       removeAllActiveClasses();
@@ -57,6 +62,16 @@ const pageTimeout = setTimeout(() => {
   sidebarMenuContent.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
       openToggleClass(e);
+    }
+  });
+  submitBtn.addEventListener('click', () => {
+    if (contactForm.email.value !== contactForm.email.value.toLowerCase()) {
+      errorMessage.textContent =
+        'The email entered must be in lowercase. Check email to submit!';
+      errorMessage.style.display = 'block';
+    } else {
+      errorMessage.textContent = '';
+      errorMessage.style.display = 'none';
     }
   });
 }, 1000);
