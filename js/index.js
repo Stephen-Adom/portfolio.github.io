@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 const pageTimeout = setTimeout(() => {
   const navBtn = document.querySelector('.open-nav');
   const mobileNavigation = document.querySelector('.mobile-navigation');
@@ -7,6 +8,10 @@ const pageTimeout = setTimeout(() => {
 
   const infoSections = document.querySelectorAll('.info-section');
   const mainNavigationLinks = document.querySelectorAll('.nav-link');
+
+  const contactForm = document.querySelector('form');
+  const errorMessage = document.querySelector('.error-message');
+  const submitBtn = document.querySelector('.project-btn.submit-btn');
 
   function removeAllActiveClasses() {
     Array.from(mainNavigationLinks).forEach((link) => {
