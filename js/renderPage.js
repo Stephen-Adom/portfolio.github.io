@@ -369,8 +369,6 @@ const displayModal = (project) => {
     });
   }
 
-  console.log(project, 'project');
-
   modalWrapper.innerHTML = `
   <div class="modal-card">
   <div class="modal-header">
