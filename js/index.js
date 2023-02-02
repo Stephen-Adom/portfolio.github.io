@@ -13,6 +13,10 @@ const pageTimeout = setTimeout(() => {
   const errorMessage = document.querySelector('.error-message');
   const submitBtn = document.querySelector('.project-btn.submit-btn');
 
+  const contactInfo = localStorage.getItem('contact-info')
+    ? JSON.parse(localStorage.getItem('contact-info'))
+    : {};
+
   function removeAllActiveClasses() {
     Array.from(mainNavigationLinks).forEach((link) => {
       link.classList.remove('active');
@@ -29,9 +33,13 @@ const pageTimeout = setTimeout(() => {
   let currentActive = 0;
 
   window.addEventListener('scroll', () => {
-    const current = infoSections.length - [...infoSections]
-      .reverse()
-      .findIndex((section) => window.scrollY >= section.offsetTop - sectionMargin) - 1;
+    const current = infoSections.length
+      - [...infoSections]
+        .reverse()
+        .findIndex(
+          (section) => window.scrollY >= section.offsetTop - sectionMargin,
+        )
+      - 1;
 
     if (current !== currentActive) {
       removeAllActiveClasses();
@@ -68,7 +76,22 @@ const pageTimeout = setTimeout(() => {
     } else {
       errorMessage.textContent = '';
       errorMessage.style.display = 'none';
+      localStorage.setItem('contact-info', JSON.stringify(contactInfo));
     }
+  });
+  const setContactValues = () => {
+    if (Object.keys(contactInfo).length) {
+      contactForm.name.value = contactInfo.name;
+      contactForm.email.value = contactInfo.email;
+      contactForm.message.value = contactInfo.message;
+    }
+  };
+
+  setContactValues();
+
+  contactForm.addEventListener('change', (e) => {
+    contactInfo[e.target.name] = e.target.value;
+    localStorage.setItem('contact-info', JSON.stringify(contactInfo));
   });
 }, 1000);
 
