@@ -13,6 +13,8 @@ const pageTimeout = setTimeout(() => {
   const errorMessage = document.querySelector('.error-message');
   const submitBtn = document.querySelector('.project-btn.submit-btn');
 
+  const contactInfo = localStorage.getItem('contact-info') ? JSON.parse(localStorage.getItem('contact-info')) : {};
+
   function removeAllActiveClasses() {
     Array.from(mainNavigationLinks).forEach((link) => {
       link.classList.remove('active');
@@ -68,6 +70,7 @@ const pageTimeout = setTimeout(() => {
     } else {
       errorMessage.textContent = '';
       errorMessage.style.display = 'none';
+      localStorage.setItem('contact-info', JSON.stringify(contactInfo));
     }
   });
 }, 1000);
