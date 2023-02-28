@@ -58,7 +58,7 @@ const renderHeader = () => {
   const html = `
   <div id="navbar" role="navigation">
   <div class="container">
-    <a href="#" class="page_logo">My Logo</a>
+    <a href="#" class="page_logo">Stephen</a>
     <nav class="navbar-nav">
       <a type="button" class="nav-toggle-btn">
         <img
@@ -120,7 +120,7 @@ const renderMain = () => {
   <section id="headline">
   <div class="container">
     <hgroup>
-      <h1 class="headline-title">I’m Mariane</h1>
+      <h1 class="headline-title">I’m Stephen Addae</h1>
       <h1 class="headline-title">Glad to see you!</h1>
     </hgroup>
     <p>
@@ -446,7 +446,9 @@ const addClickEventToWorkSection = (workSectionContainer) => {
 };
 
 const renderProjectList = () => {
-  const workSectionContainer = document.querySelector('#work-section .container');
+  const workSectionContainer = document.querySelector(
+    '#work-section .container',
+  );
 
   let projectHtml = '';
   projectLists.forEach((project, index) => {
