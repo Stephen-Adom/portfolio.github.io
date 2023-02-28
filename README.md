@@ -57,7 +57,7 @@ More about this project can be found in [this video](https://drive.google.com/fi
 
 Here is a link to my project. You can view to show the output so far.
 
-- [Live Demo Link](https://stephen-adom.github.io/portfolio/)
+- [Live Demo Link](https://stephen-adom.github.io/portfolio.github.io/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
